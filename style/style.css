@@ -1,0 +1,341 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", serif;
+}
+
+#header {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    text-align: center;
+    top: 0;
+}
+
+#logo {
+    margin: 0;
+    font-size: 4vw;
+}
+
+#header-line {
+    background-color: white;
+    width: 100%;
+    height: 2px;
+}
+
+#menu-container {
+    display: flex;
+    font-size: 1.5vw;
+}
+
+.menu-elem {
+    width: 20%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0;
+    color: white;
+    text-decoration-line: none;
+}
+
+.menu-elem:hover {
+    animation-name: changeColorToWhite;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes changeColorToWhite {
+100% {
+    background-color: white;
+    color: black;
+}
+}
+
+.module_header {
+    color: black;
+    padding-top: 2vw;
+    padding-bottom: 1.5vw;
+    text-align: center;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+#about_us {
+    padding-top: 5.5vw;
+}
+
+.about_el {
+    width: 45vw;
+    height: 41.5vw;
+    min-width: 350px;
+    min-height: 250px;
+    background-color: darkgray;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 2vw;
+}
+
+#about_el1 {
+    margin-left: 7vw;
+}
+#about_el2 {
+    margin-left: 47vw;
+}
+#about_el3 {
+    margin-left: 7vw;
+}
+
+.about_img {
+    width: auto;
+    height: 27vw;
+    min-width: 350px;
+    min-height: 200px;
+}
+
+.about_text {
+    padding: 1vw;
+    font-size: 1.8vw;
+    text-align: center;
+}
+
+#how_background {
+    background-color: #FEF9C3;
+}
+
+#how_background {
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+}
+
+
+.how_el {
+    background-color: #FDE047;
+    display: flex;
+    justify-content: space-around;
+    height: 15vw;
+    min-width: 350px;
+    min-height: 100px;
+    border-radius: 60px;
+    overflow: hidden;
+    margin-bottom: 2vw;
+}
+
+.how_el_cont {
+    width: 7vw;
+    display: block;
+}
+
+.how_number {
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+    margin: 0;
+    padding-top: 2vw;
+    padding-bottom: 1.5vw;
+}
+
+.how_text {
+    text-align: center;
+    margin: 0;
+    padding-top: 1.5vw;
+    font-size: 1vw;
+}
+
+#slider_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.car_img_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.car_img {
+    height: 25vw;
+    display: block;
+}
+
+.car_header {
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    margin: 1vw;
+}
+
+.car_text_wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.car_text {
+    text-align: center;
+    width: 55vw;
+    margin-top: 0;
+    font-size: 1.5vw;
+}
+
+#arrow_left {
+    transform: scaleX(-1);
+}
+
+#arrow_left, #arrow_right {
+    border-radius: 10px;
+    height: 4vw;
+}
+
+#arrow_left:hover, #arrow_right:hover {
+    animation-name: changeColorToGray;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes changeColorToGray {
+    100% {
+        background-color: gray;
+        color: black;
+    }
+}
+
+.arrow_wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 25vw;
+}
+
+#slide2, #slide3 {
+    display: none;
+}
+
+
+
+#survey-form {
+    background-color: #FEF9C3;
+    text-align: center;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1.3vw;
+    padding-top: 2vw;
+}
+
+#description {
+    margin-bottom: 2vw;
+}
+
+#name, #surname, #email, #number {
+    width: 18vw;
+    height: 1.5vw;
+    margin-bottom: 1vw;
+    background-color: #FDE047;
+    color: black;
+}
+
+#name::placeholder, #surname::placeholder, #email::placeholder, #number::placeholder {
+    color: white;
+}
+
+#name {
+    margin-left: 1.8vw;
+}
+
+#email {
+    margin-left: 1.8vw;
+}
+
+#number {
+    margin-left: 2.8vw;
+}
+
+#dropdown {
+    height: 2vw;
+    width: 5vw;
+    background-color: #FDE047;
+}
+
+.dropdown-elem {
+    background-color: #FEF9C3;
+}
+
+textarea {
+    width: 50vw;
+}
+
+input {
+    background-color: #FDE047;
+}
+
+input[type="checkbox"] {
+    margin-left: 1.3vw;
+}
+
+#service_loc {
+    margin-bottom: 2vw;
+}
+
+p {
+    font-weight: bold;
+}
+
+#submit {
+    width: 7vw;
+    height: 2.5vw;
+    font-size: 1.5vw;
+    margin-top: 1.5vw;
+    border-radius: 25px;
+    background-color: #FDE047;
+    margin-bottom: 2vw;
+}
+
+#submit:hover {
+    animation-name: changeColorToWhite2;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes changeColorToWhite2 {
+    100% {
+        background-color: black;
+        color: #FDE047;
+    }
+}
+
+#contacts-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+#address-wrapper {
+    display: block;
+    text-align: left;
+    margin-left: 40vw;
+}
+
+@media (max-width: 700px) {
+    .how_el {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+}
+
+
+@media (min-width: 701px) {
+    .how_el {
+        width: 45vw;
+    }
+    #how_el1 {
+        margin-left: 7vw;
+    }
+    #how_el2 {
+        margin-left: 47vw;
+    }
+}
